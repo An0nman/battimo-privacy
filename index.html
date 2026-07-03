@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battimo — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for the Battimo Android app (cute emoji battery icons for your status bar).">
+<style>
+  :root{
+    --bg:#efe6d3; --surface:#fbf5e9; --ink:#3b3027; --inkSoft:#7a6e5c;
+    --teal:#1e8a82; --tealDark:#13635d; --hair:#e2d5bc;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#211c16; --surface:#2c2620; --ink:#f0e7d6; --inkSoft:#b6a992;
+      --teal:#3bb6ac; --tealDark:#2a8a82; --hair:#3d352b;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:24px 16px;
+  }
+  .wrap{max-width:760px; margin:0 auto}
+  header{
+    background:var(--surface); border:1px solid var(--hair); border-radius:20px;
+    padding:28px 28px 24px; margin-bottom:24px;
+  }
+  .brand{display:flex; align-items:center; gap:12px; margin-bottom:6px}
+  .logo{
+    width:44px; height:44px; border-radius:12px; flex:0 0 auto;
+    background:var(--teal); color:#fbf5e9; display:grid; place-items:center;
+    font-size:24px; font-weight:800;
+  }
+  h1{font-size:26px; margin:0; letter-spacing:-.01em}
+  .sub{color:var(--inkSoft); margin:2px 0 0; font-size:14px}
+  main{
+    background:var(--surface); border:1px solid var(--hair); border-radius:20px;
+    padding:8px 28px 24px;
+  }
+  h2{
+    font-size:18px; margin:28px 0 8px; padding-top:20px;
+    border-top:1px solid var(--hair); letter-spacing:-.01em;
+  }
+  h2:first-of-type{border-top:none; padding-top:8px}
+  p,li{color:var(--ink)}
+  ul{padding-left:20px; margin:8px 0}
+  li{margin:6px 0}
+  a{color:var(--teal); text-decoration:none; word-break:break-word}
+  a:hover{text-decoration:underline}
+  .note{
+    background:var(--bg); border:1px solid var(--hair); border-radius:12px;
+    padding:12px 16px; margin:16px 0; font-size:15px; color:var(--inkSoft);
+  }
+  strong{color:var(--ink)}
+  footer{color:var(--inkSoft); font-size:13px; text-align:center; margin:24px 0 8px}
+  code{background:var(--bg); border:1px solid var(--hair); border-radius:6px; padding:1px 6px; font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo">B</div>
+      <div>
+        <h1>Battimo — Privacy Policy</h1>
+        <p class="sub">Cute emoji battery icons for your status bar</p>
+      </div>
+    </div>
+    <p class="sub"><strong>Effective date:</strong> July 4, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> July 4, 2026</p>
+  </header>
+
+  <main>
+    <div class="note">
+      <strong>The short version:</strong> Battimo is built to work <strong>without collecting your
+      personal data</strong>. Your settings and saved designs stay on your device. There is no account
+      or login. The only data leaving your phone is what's needed to load design artwork and to show
+      ads through Google AdMob, as explained below.
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>
+      This Privacy Policy explains how the <strong>Battimo</strong> mobile application
+      (the "App", package <code>com.cute.emoji.battery.battery_icon</code>) handles information.
+      Battimo personalizes your Android status bar with cute, custom battery designs. By using the App,
+      you agree to this policy.
+    </p>
+
+    <h2>2. Information we collect</h2>
+    <p>
+      <strong>We do not collect personal information that identifies you.</strong> Battimo has no
+      account system and does not ask for your name, email, phone number, contacts, photos, or location.
+    </p>
+    <ul>
+      <li><strong>On-device settings &amp; saved designs</strong> — your chosen design, colors, sizes and
+        other preferences are stored locally on your phone (using standard app storage). They are not
+        transmitted to us. Uninstalling the App removes them.</li>
+      <li><strong>No personal analytics of our own</strong> — we do not run our own tracking or
+        analytics SDK to profile you.</li>
+    </ul>
+
+    <h2>3. Designs &amp; the internet</h2>
+    <p>
+      Design artwork is loaded from our image host (<strong>Cloudinary</strong>) and our catalog is
+      served from <strong>Google Firebase (Cloud Firestore)</strong>, so you always see the latest
+      designs. Loading an image or the catalog is an ordinary web request: your device's IP address is
+      visible to the host (as with loading any image or page online), and no personal information is
+      attached. A small, <strong>anonymous</strong> counter may be incremented in Firestore to show
+      which designs are popular — this is not tied to you or your device identity. Design images are
+      cached temporarily on your device and are not kept permanently.
+    </p>
+
+    <h2>4. Permissions we use</h2>
+    <ul>
+      <li><strong>Accessibility Service</strong> — used <em>only</em> to draw your chosen design over the
+        system status bar and to detect the status-bar gestures you set up. It reads only the status
+        bar's size and position to place the overlay. <strong>It does not read, store, or share the text
+        or content of your screen</strong>, and it does not log your activity.</li>
+      <li><strong>Battery, Wi-Fi &amp; signal status</strong> — read to display them inside your custom
+        status bar. They are shown on your device only — never stored or sent.</li>
+      <li><strong>Display over other apps / foreground service &amp; notification</strong> — used to keep
+        your custom status bar visible and running reliably. A small ongoing notification may be shown so
+        Android keeps the overlay active.</li>
+      <li><strong>Ignore battery optimizations</strong> — requested so the overlay is not killed by the
+        system and your design keeps showing.</li>
+      <li><strong>Network &amp; Wi-Fi state / Internet</strong> — used to load designs and to know whether
+        you're online (so offline you still see your saved and applied designs).</li>
+      <li><strong>Vibrate</strong> — used for light haptic feedback when you tap controls.</li>
+    </ul>
+
+    <h2>5. Advertising</h2>
+    <p>
+      Battimo shows ads through <strong>Google AdMob</strong>. To serve and measure ads, Google and its
+      partners may collect and use certain device information — such as advertising identifiers, general
+      device data, and app-interaction data — under Google's own policies. Please see
+      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's Advertising policy</a>
+      and how Google uses information from apps that use its services at
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.
+    </p>
+    <p>
+      You can limit ad personalization at any time in your device settings
+      (<strong>Settings → Google → Ads</strong>), and you can remove ads entirely by subscribing to
+      Battimo Premium (see below).
+    </p>
+
+    <h2>6. Purchases (Battimo Premium)</h2>
+    <p>
+      Battimo offers an optional <strong>Premium subscription</strong> that removes ads and unlocks all
+      premium designs. Purchases are processed by <strong>Google Play Billing</strong> — we never see or
+      store your payment card details. Your purchase status is stored on your device and validated
+      through Google Play so it can be restored. Subscriptions are managed and can be cancelled anytime
+      from the Google Play Store (<strong>Play Store → Subscriptions</strong>). Google's handling of
+      payments is governed by the
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+    </p>
+
+    <h2>7. Data sharing</h2>
+    <p>
+      We do <strong>not</strong> sell your information. We do not share personal data with third parties
+      for their own marketing. The only third-party services involved are those described above —
+      Google AdMob (ads), Google Firebase and Google Play Services (catalog, purchases, and core app
+      functionality), and Cloudinary (image hosting) — each acting under its own privacy policy.
+    </p>
+
+    <h2>8. Data security &amp; retention</h2>
+    <p>
+      Because Battimo keeps your preferences on your own device and doesn't maintain user accounts,
+      there is no personal profile of you on our servers to breach. On-device data remains until you
+      clear the app's data or uninstall it. Network requests use standard secure (HTTPS) connections.
+    </p>
+
+    <h2>9. Children's privacy</h2>
+    <p>
+      Battimo is a general-audience personalization app and is not directed to children under 13
+      (or the equivalent minimum age in your country). We do not knowingly collect personal information
+      from children. If you believe a child has provided us information, please contact us and we will
+      address it.
+    </p>
+
+    <h2>10. Feedback &amp; contact</h2>
+    <p>
+      If you contact us through the in-app Feedback option or by email, we receive your message and your
+      email address so we can reply, and we use them only for that purpose. For any question about this
+      policy or your data, email us at
+      <a href="mailto:projectsbyfarhan1107@gmail.com">projectsbyfarhan1107@gmail.com</a>.
+    </p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>
+      We may update this policy as the App evolves. When we do, we'll change the "Last updated" date
+      above. Significant changes will be reflected here at this same URL, so please check back from time
+      to time.
+    </p>
+  </main>
+
+  <footer>© 2026 Battimo · <a href="mailto:projectsbyfarhan1107@gmail.com">projectsbyfarhan1107@gmail.com</a></footer>
+</div>
+</body>
+</html>
